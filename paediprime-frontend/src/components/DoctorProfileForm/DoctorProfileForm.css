@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: url(background1.jpg) fixed; */
+    padding-top: 0px;
+    background-size: cover; 
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: url('background1.jpg') fixed;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: "Italiana", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: bisque;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.input-box input,
+.input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0 20px;
+    -webkit-appearance: none; /* To remove default arrow in some browsers */
+    -moz-appearance: none; /* To remove default arrow in some browsers */
+    appearance: none; /* To remove default arrow in some browsers */
+    
+}
+
+.input-box input::placeholder,
+.input-box select::placeholder {
+    color: #fff;
+}
+
+.input-box select {
+    padding-right: 30px; /* Additional space for custom arrow */
+    background: transparent url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23fff" d="M2 0L0 2h4z"/></svg>') no-repeat right center;
+    background-size: 12px 12px;
+}
+
+.add-clinic {
+    width: 100%; /* Ensure consistent width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #0955e5fc;
+    margin: 20px 0;
+}
+
+.add-clinic i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.add-clinic span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.image-upload input[type="file"] {
+    display: none;
+}
+
+.image-upload label {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-upload img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#plus-icon {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#doctor-image-preview {
+    margin-top: 10px;
+}
+
+#upload-text {
+    display: block;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.clinic-group {
+    display: flex;
+    flex-direction: column;
+}
+
+option {
+    color: black;
+}

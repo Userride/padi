@@ -1,0 +1,135 @@
+.doctor-appointment {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-left: 0px;
+    background-color: white;
+  }
+  
+  .left-section, .right-section {
+    width: 45%;
+  }
+  
+  .left-section {
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .top-section {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .doctor-details img {
+    
+    height: auto;
+    border-radius: 9px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  #dl{
+     margin-top: 4px;
+     margin-left: 60px;
+     margin-bottom: 5px;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+  }
+  .doctor-details p {
+    margin-top: 70px;
+    line-height: 1.6;
+    margin-left: 10px;
+    width: 350px;
+    background-color: whitesmoke;
+    margin-top: 20px;
+  }
+  h1{
+    color: blueviolet;
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 30px;
+  }
+  .clinic1 {
+    margin-bottom: 0px;
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 400px;
+    margin-top: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .clinic2 {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    height: 250px;
+    margin-left: 20px;
+  }
+  .clinic-info h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .communication-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+  h3{
+    color: blueviolet;
+    font-weight: 800;
+    font-size: large;
+  }
+  .icon1 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .icon2 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .icon3 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .icon1 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .icon2 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .icon3 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  #l {
+    margin-bottom: 0px;
+    color: #555;
+
+  }
+  
+  

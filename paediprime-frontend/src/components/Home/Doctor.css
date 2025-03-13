@@ -1,0 +1,160 @@
+.doctor-appointment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  }
+  
+  .top-section-doctor,
+  .right-section-doctor {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .top-section-doctor {
+    margin-top: 50px;
+  }
+  
+  .right-section-doctor {
+    margin-top: 50px;
+  }
+
+  .doctor-details img {
+    
+  width: 260px;
+  height: 260px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  padding: 0px;
+  margin-top: 15px;
+  
+  }
+
+  .doctor-details {
+    background-color: #fbfbfb80;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+  .doctorh1{
+    color: blueviolet;
+    font-weight: 800;
+    /* text-decoration: underline; */
+    font-size: 30px;
+  }
+  .clinic1 {
+    margin-bottom: 0px;
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 400px;
+    margin-top: 0px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .clinic2 {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    padding: 15px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    max-height: 300px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .clinic-info h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .communication-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  h3{
+    color: blueviolet;
+    font-weight: 800;
+    font-size: large;
+  }
+  .icon1 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .icon2 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .icon3 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .icon1 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .icon2 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .icon3 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  #l {
+    margin-bottom: 0px;
+    color: #555;
+
+  }
+  .communication-options{
+    display: flex;
+  /* justify-content: space-between; */
+     margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+  .communication-option {
+    background-color: #e9ecef;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .communication-options img {
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  

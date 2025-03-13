@@ -1,0 +1,381 @@
+/* 
+.clinic-container {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+
+.clinic {
+  width: 169px;
+  height: 202px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.clinic img {
+  width: 78px;
+  height: 78px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.clinic h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  margin: 15px 0 5px 0;
+}
+
+.clinic p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000000;
+  margin: 5px 0;
+} */
+
+/* .clinic p.rating {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #6a769a;
+  margin-top: 10px;
+} */
+
+/* .additional-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+} */
+
+/* .row {
+    display: flex;
+    width: 78px;
+    height: 78px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+} */
+
+/* .doctor-info {
+  margin-right: 20px;
+}
+
+.doctor-details {
+  margin-top: 10px;
+} */
+/* .search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  border-radius: 40px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 400px;
+  margin-right: 0px;
+  margin-right: 0;
+  padding-left: 30px;
+} */
+/* body{ */
+  /* background-color: aliceblue; */
+  /* background-color: white;
+}
+.hd{
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto 40px;
+  position: relative;
+  line-height: 60px;
+}
+.hd::after{
+  content: ' ';
+  background: #0d5382;
+  width: 80px;
+  height: 5px;
+  position:absolute;
+  border-radius: 5px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.map-container iframe{
+  width: 500px;
+  height: 400px;
+} */
+
+
+body {
+  background-color: white;
+}
+
+.hd {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto 40px;
+  position: relative;
+  line-height: 60px;
+}
+
+.hd::after {
+  content: ' ';
+  background: #0d5382;
+  width: 80px;  
+  height: 5px;
+  position: absolute;
+  border-radius: 5px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.clinic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-section {
+  margin-top: 50px;
+}
+
+.right-section {
+  margin-top: 50px;
+}
+
+.clinic {
+  width: 190px;
+  height: 235px; /* Fixed height */
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.clinic img {
+  width: 78px;
+  height: 78px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.clinic h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  margin: 15px 0 5px 0;
+}
+
+.clinic p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000000;
+  margin: 5px 0;
+}
+
+.additional-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  margin-right: 10px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto 0;
+}
+
+.map-container iframe{
+  width: 500px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .clinic-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .left-section {
+    margin-top: 20px;
+  }
+
+  .right-section {
+    margin-top: 20px;
+  }
+
+  .search-input {
+    margin: 10px 0;
+  }
+  .map-container iframe{
+    width: 100%;
+    /* height: 400px; */
+  }
+  .search-button{
+    /* padding: 5px 5px; */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 10px;
+    height: 48px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .clinic-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .left-section {
+    margin-top: 20px;
+  }
+
+  .right-section {
+    margin-top: 20px;
+  }
+
+  .search-input {
+    margin: 10px 0;
+  }
+  .map-container iframe{
+    width: 100%;
+    /* height: 400px; */
+  }
+  .search-button{
+    /* padding: 5px 5px; */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 10px;
+    height: 48px;
+    margin-top: 10px;
+  }
+}

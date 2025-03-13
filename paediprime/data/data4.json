@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dr. Arita Khan",
+    "specialty": "MBBS, MD (Pediatrics)",
+    "location": "123 Main Street, Dharmatala, Kolkata",
+    "availableSlots": ["9:00 AM-11:00 AM", "10:00 AM-12:30 PM", "7:00 PM-9:00 PM"],
+    "consultantFees": 500,
+    "image": "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Dr. John Doe",
+    "specialty": "MBBS, MS (Orthopedics)",
+    "location": "456 Main Street, Park Street, Kolkata",
+    "availableSlots": ["8:00 AM-10:00 AM", "2:00 PM-4:30 PM", "6:00 PM-8:00 PM"],
+    "consultantFees": 700,
+    "image": "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "name": "Dr. Emily Brown",
+    "specialty": "MBBS, DGO, Gynecologist",
+    "location": "789 Main Street, Ballygunge, Kolkata",
+    "availableSlots": ["10:00 AM-12:00 PM", "1:00 PM-3:00 PM", "4:00 PM-6:00 PM"],
+    "consultantFees": 600,
+    "image": "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]

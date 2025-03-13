@@ -1,0 +1,34 @@
+.file-upload {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  .file-upload h2 {
+    color: #2c3e50;
+  }
+  
+  .file-upload input {
+    margin: 10px 0;
+    padding: 8px;
+  }
+  
+  .file-upload button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .file-upload button:hover {
+    background-color: #2980b9;
+  }
+  
+  .file-upload p {
+    color: #27ae60;
+  }
+  

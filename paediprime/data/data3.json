@@ -1,0 +1,40 @@
+[
+    {
+      "name": "Paediprime",
+      "location": "Dharmatala, Kolkata",
+      "clinicTime": "9:00 AM - 5:00 PM",
+      "holiday": "Sunday",
+     
+      "about": "Vibrant Care is a leading healthcare provider in the heart of Patna. Our clinic is equipped with state-of-the-art facilities and staffed by a team of experienced medical professionals dedicated to providing personalized care to our patients.",
+      "image": "https://plus.unsplash.com/premium_photo-1682145288913-979906a9ebc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "name": "Paediprime",
+      "location": "Basantapur More, Arambagh",
+      "image": "https://plus.unsplash.com/premium_photo-1682145288913-979906a9ebc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "clinicTime": "8:00 AM - 6:00 PM",
+      "holiday": "Saturday",
+      
+      "about": "Sunshine Clinic is dedicated to providing comprehensive healthcare services to individuals and families in Los Angeles."
+    },
+    {
+      "name": "Paediprime",
+      "location": "Saltlake, Kolkata",
+      "image": "https://plus.unsplash.com/premium_photo-1682145288913-979906a9ebc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "clinicTime": "9:00 AM - 5:00 PM",
+      "holiday": "Sunday",
+     
+      "about": "Ayushman-Yogna is committed to providing affordable and high-quality healthcare services to the community in Chicago."
+    },
+    {
+      "name": "Paediprime",
+      "location": "Park Street, Kolkata",
+      "image": "https://plus.unsplash.com/premium_photo-1682145288913-979906a9ebc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "clinicTime": "9:00 AM - 5:00 PM",
+      "holiday": "Sunday",
+      
+      "about": "Ayushman-Yogna is committed to providing affordable and high-quality healthcare services to the community in Chicago."
+    }
+    
+  ]
+  

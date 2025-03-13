@@ -1,0 +1,615 @@
+/* .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .doctor-images-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 100;
+  }
+  
+  .doctor-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  .footer{
+    margin-top: auto;
+  }
+  .additional-images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 10px;
+    margin-right: 0px;
+    background-color: #0056b3;
+    margin-top: 20px; /* Adjusted margin-top value */
+  /* }
+  
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the start of the main axis (left side) */
+   /* margin-bottom: 20px; /* Add space between rows */
+  /* } */
+  
+  /* .row img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-bottom: 20px; /* Make images circular */
+  /* } */
+  
+  /* #f{
+    text-align: center;
+    color: #0056b3;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  #g{
+    text-align: center;
+    text-decoration: 2px solid blue;
+    color: #0056b3;
+    padding-top: 10px;
+    font-weight: 800;
+    font-size: 20px;
+  }   */
+  /* .doctors-container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .additional-doctors-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .doctor-info {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .doctor-details {
+    text-align: center;
+  }
+  
+  .doctor-name {
+    font-weight: bold;
+  }
+  
+  .doctor-specialty,
+  .doctor-location {
+    margin-top: 5px;
+  }  */
+
+
+
+
+ /* .doctors-container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .additional-doctors-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .doctor-info {
+
+    margin-right: 30px;
+    padding: 20px;
+    border: 1px solid blueviolet;
+    background-color: burlywood;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .doctor-details {
+    text-align: center;
+  }
+  
+  .doctor-name {
+    font-weight: bold;
+  }
+  
+  .doctor-specialty,
+  .doctor-location {
+    margin-top: 5px;
+  }
+  .hdr{
+    margin: 10px;
+    font-weight: 500;
+    color: blue;
+    font-size: 30px;
+  }
+   */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+   .doctors-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button,
+  .clear-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .search-button:hover,
+  .clear-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .right-section {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .hdr {
+    text-align: center;
+    color: #007bff;
+    text-decoration: 2px solid blue;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-left: 140px;
+  }
+  
+  .additional-doctors-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  
+  .doctor-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .doctor-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .doctor-specialty,
+  .doctor-location {
+    margin: 0;
+  }
+  .map-container{
+    width: 100px;
+  } */
+
+
+
+
+  .doctors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .left-section,
+  .right-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left-section {
+    margin-top: 50px;
+  }
+  
+  .right-section {
+    margin-top: 50px;
+  }
+  
+  .hd {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+  }
+  
+  .hd::after {
+    content: ' ';
+    background: #0d5382;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button,
+  .clear-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .search-button:hover,
+  .clear-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
+  
+  .additional-doctors-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      margin-top: 0px;
+    } */
+  
+  /* .doctor-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .doctor-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .doctor-specialty,
+  .doctor-location {
+    margin: 0;
+  } */
+  
+  
+  .doctor-info {
+    width: 100%;
+    /* height: 169px; */
+    max-width: 202px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-info img {
+    width: 78px;
+    height: 78px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .doctor-info h2 {
+    font-family: 'Inter', sans-serif;
+    font-size:medium;
+    font-weight: 550;
+    color: #000000;
+    /* margin: 10px 0 5px 0; */
+  }
+  
+  .doctor-info p {
+    font-family: 'Inter', sans-serif;
+    font-size:medium;
+    font-weight: 300;
+    color: #000000;
+    margin: 5px 0;
+  }
+  
+  .map-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
+  
+  .map-container iframe {
+    width: 500px;
+    height: 400px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .doctors-container {
+      flex-direction: column;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .left-section {
+      margin-top: 20px;
+    }
+  
+    .right-section {
+      margin-top: 20px;
+    }
+  
+    .search-input {
+      margin: 10px 0;
+    }
+    .map-container iframe{
+      width: 100%;
+      /* height: 400px; */
+    }
+    .search-button{
+      /* padding: 5px 5px; */
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-left: 10px;
+      height: 48px;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .doctors-container {
+      flex-direction: column;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .left-section {
+      margin-top: 20px;
+    }
+  
+    .right-section {
+      margin-top: 20px;
+    }
+  
+    .search-input {
+      margin: 10px 0;
+    }
+    .map-container iframe{
+      width: 100%;
+      /* height: 400px; */
+    }
+    .search-button{
+      /* padding: 5px 5px; */
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-left: 10px;
+      height: 48px;
+      margin-top: 10px;
+    }
+  }

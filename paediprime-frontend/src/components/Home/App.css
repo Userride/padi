@@ -1,0 +1,187 @@
+/* Container for the entire doctor appointment section */
+.doctor-appointment-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Individual doctor item styling */
+.doctor-item {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.doctor-item img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.doctor-item h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.doctor-item p {
+  margin: 0;
+}
+
+.doctor-item.selected {
+  background-color: #b3e0ff;
+}
+
+/* Doctor details styling */
+.doctor-de {
+  background-color: #fbfbfb80;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.doctor-de img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 5px;
+  display: block;
+  max-width: 75%;
+}
+
+/* Appointment booking section styling */
+.book-appointment2 {
+  background-color: lavender;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 390px;
+  margin: 20px auto;
+}
+
+.appointment-details2 {
+  margin-top: 20px;
+}
+
+.appointment-details2 label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.appointment-details2 input,
+.appointment-details2 select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.appointment-details2 button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.appointment-details2 button:hover {
+  background-color: #0056b3;
+}
+
+#f2, #f {
+  color: blueviolet;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: medium;
+}
+
+/* Patient list styling */
+.patient-list {
+  flex: 1;
+  margin: 20px;
+  background-color: whitesmoke;
+  max-width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.patient-list h2 {
+  margin-bottom: 10px;
+}
+
+.patient-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.patient-list li {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+p {
+  padding: 10px;
+  color: green;
+}
+/* Style the search input for symptoms */
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Style the symptom list container */
+.symptom-list {
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto; /* Adds scroll if the list is too long */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 5px;
+}
+
+/* Style individual symptoms in the list */
+.symptom-list li {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change background color when hovering over a symptom */
+.symptom-list li:hover {
+  background-color: #e0f7fa;
+}
+
+/* Style selected symptoms */
+.symptom-list li span {
+  color: #00796b;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Message if no symptoms found */
+.symptom-list li.no-symptom {
+  font-style: italic;
+  color: #888;
+}
+.patient-list {
+  margin-top: 85px; /* Adjust the value as needed */
+}
+

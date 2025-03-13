@@ -1,0 +1,431 @@
+/* .clinic-appointment-container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .clinic-list {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .clinic-item {
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .clinic-item img {
+    width: 270px;
+    height: 220px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+ 
+
+
+  
+  .clinic-info{
+    background-color: aqua;
+    height: 550px;
+    width: 300px;
+    margin-right: 800px;
+    margin-top: 50px;
+
+}
+  
+  .clinic-item.selected {
+    border: 2px solid blue;
+    width: 70%;
+    height: 275px;
+    margin: 20px;
+    margin-top: 50px;
+    background-color: bisque;
+  }
+  
+
+  .right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-info {
+    margin-top: 20px;
+  }
+  
+  .doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .doctor-item {
+    cursor: pointer;
+  }
+  
+  .doctor-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .doctor-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .doctor-details {
+    padding-top: 10px;
+  }
+  
+  .doctor-details h3 {
+    margin-top: 0;
+  }
+  
+  .doctor-details p {
+    margin: 5px 0;
+  }
+  
+  
+  
+
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    margin-right: 100px;
+  }
+  
+  .appointment-details {
+    max-width: 300px;
+  }
+  
+  .appointment-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .appointment-details label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-details input,
+  .appointment-details select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-details button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .appointment-details button:hover {
+    background-color: darkblue;
+  }
+  p{
+    padding: 5px;
+    padding-left: 20px;
+  }
+  h1{
+    color:blue;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 3px;
+  }
+  h2{
+    
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+    padding-bottom: 0px;
+    text-decoration: underline;
+  } */
+  .clinic-appointment-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+  }
+  
+  .clinic-list {
+    flex: 1;
+    padding: 20px;
+
+   
+  }
+  
+  .clinic-item {
+    cursor: pointer;
+    margin: 10px;
+
+  }
+  
+  .clinic-item img {
+    width: 260px;
+    height: 230px;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 20px;
+   
+  }
+  
+  .clinic-info {
+    background-color: whitesmoke;
+    height: 800px;
+    width: 320px;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .clinic-item.selected {
+    border: 2px solid blue;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+    margin-bottom: 3px;
+   
+  }
+  
+  .right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .doctor-info {
+    margin-top: 30px;
+    margin-left: 0px;
+
+  }
+  
+  .doctor-list {
+   display: flex;
+   flex-direction: row;
+  
+  }
+  
+  .doctor-item {
+    cursor: pointer;
+  
+  }
+  
+  .doctor-c {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+     width: 210px;
+      margin-left: 10px;
+     background-color: whitesmoke;
+     padding: 10px;
+
+  }
+  
+  .doctor-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .doctor-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 20px;
+    padding-top: 0px;
+  }
+  
+  .doctor-details {
+    padding-right: 10px;
+  }
+  
+  .doctor-details h3 {
+    margin-top: 0;
+    padding-left: 17px;
+    color: blueviolet
+  }
+  
+  .doctor-details p {
+    margin: 5px 0;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .appointment-details {
+    max-width: 300px;
+  }
+ 
+  .appointment-details h2 {
+    margin-bottom: 20px;
+  }
+  
+  .appointment-details label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-details input,
+  .appointment-details select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .appointment-details button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 35px;
+  }
+  
+  .appointment-details button:hover {
+    background-color: darkblue;
+  }
+  
+  p {
+    padding: 5px;
+    padding-left: 20px;
+  }
+  
+  h1 {
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    text-decoration: underline;
+  }
+  
+  h2 {
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+    font-size: large;
+    padding-bottom: 0px;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  h4{
+     color:blue;
+  
+     margin-left: 100px;
+     margin-top: 20px;
+     margin-bottom: 0px;
+     font-weight: 800;
+     font-size: 30px;
+     text-decoration: underline;
+    
+  }
+  h5{
+    color: blue;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  #button{
+    background-color: green;
+    color: white;
+    width: 150px;
+  }
+  .bottom-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  .patient-details form {
+    background-color:  whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 200px;
+    width: 520px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .patient-details .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .patient-details .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .patient-details .form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .patient-details button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 70px;
+  }
+  
+  .patient-details button:hover {
+    background-color: #45a049;
+  }
+
+  .images{
+ 
+    width: 270px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left: 0px;
+    padding: 20px;
+    margin-top: 0px;
+  }
+  #i{
+    margin: 10px;
+  }
+  .map-container{
+      margin-top: 40px;
+      width: 300px;
+      height: 400px;
+      margin-left: 0px;
+      margin-right: 10px;
+  }
+  #bn{
+    margin-top: 90px;
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 30px;
+  }

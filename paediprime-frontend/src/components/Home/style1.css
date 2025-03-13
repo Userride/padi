@@ -1,0 +1,300 @@
+/* CSS for the whole page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F0E8;
+}
+.logo img {
+    width: 100px;
+    height: 85px;
+    margin-left: 20px; 
+    transition: transform 0.3s;
+}
+.logo img:hover {
+    transform: scale(1.1); 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; 
+    justify-content: space-between;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px; 
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3E64FF; 
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 10px 10px; 
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    color:#e6ebef;
+    text-decoration: underline;
+    background-color: #125f92; 
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    color:#e6ebef;
+}
+
+.navbar:hover {
+    background-color: #eaf1f1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.signup-login-btn {
+    background-color: #3E64FF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.signup-login-btn:hover {
+    background-color: #125f92;
+}
+nav ul li a .signup-login-btn:hover::after {
+    text-decoration: none;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for the header and main content */
+.header {
+    flex: 0 0 auto; /* Don't grow, don't shrink, take auto height */
+}
+
+.main-content {
+    flex: 1 0 auto; /* Grow, don't shrink, take remaining height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.footer {
+    flex: 0 0 auto; /* Don't grow, don't shrink, take auto height */
+}
+
+/* CSS for the Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+/* .find-doctors {
+    margin-top: 0; /* Remove margin-top 
+    width: 100%; /* Ensure it spans the entire width 
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 0;
+
+}  */
+.find-doctors {
+    margin-top: -10px; /* Adjusted margin to remove the gap */
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+#searchResultsHeading {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    justify-content: center; /* Remove bottom margin to ensure no gap */
+}
+
+
+.find-doctors form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-doctors input[type="text"] {
+    margin-right: 10px;
+    padding: 12px; /* Increase padding for larger size */
+    font-size: 16px; /* Adjust font size as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    border: 1px solid #ccc; /* Add border for better visibility */
+    width: 300px; /* Set a specific width */
+}
+
+
+.find-doctors button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.find-doctors button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS for Doctors Results Section */
+.doctors-results {
+    margin-top: 20px; /* Add margin-top for spacing */
+}
+
+/* #searchResultsHeading {
+    font-size: 20px;
+    color: #333;
+    background-color: #0056b3;
+    margin-top: 0; /* Remove top margin to make it touch the boundary */
+    /* padding: 10px; /* Add padding for better visual appearance */
+
+
+.doctor-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.doctor-card p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+}
+/* CSS for the footer */
+.footer {
+    background-color: #00DABE; 
+    color: #ffffff; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: auto; 
+    flex: 0 0 auto;
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Occupy full width */
+}
+
+/* Ensure space between the sections in the footer */
+.about-contact-container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+/* Left section (About Us) */
+.about-us {
+    flex: 1;
+}
+
+/* Right section (Contact Us) */
+.contact-us {
+    flex: 1;
+    text-align: right;
+}
+
+/* Middle section (Copyright) */
+.copyright {
+    text-align: center;
+}
+.doctor-profiles {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.doctor-profile {
+    flex: 0 0 auto; /* Don't grow or shrink */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px; /* Adjust as needed for spacing between profiles */
+}
+
+.doctor-profile img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.map-container {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 1200px; /* Set a maximum width if desired */
+    margin: 0 auto; /* Center the map container */
+    height: calc(100vh - 20px); /* Subtract the height of the search results heading */
+    margin: -20px; /* Offset the top margin to make it touch the heading */
+}
+
+#searchResults {
+    flex: 1; /* Allow this section to expand and take remaining space */
+}
+

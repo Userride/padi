@@ -1,0 +1,400 @@
+.clinic-appointment-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.middle-section,
+.buttom-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.middle-section {
+  margin-top: 50px;
+}
+
+.buttom-section {
+  margin-top: 50px;
+}
+
+
+.clinic-list {
+  flex: 1;
+  padding: 20px;
+
+ 
+}
+
+/* .clinic-item {
+  cursor: pointer;
+  margin: 10px;
+
+} */
+
+.img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  padding: 0px;
+  margin-top: 25px;
+  align-items: center;
+  display: flex;
+}
+.clinic-info {
+  background-color: #fbfbfb80;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.clinic-item.selected {
+  border: 2px solid blue;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+  margin-bottom: 3px;
+ 
+}
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+}
+.doctor-card {
+  width: 100%;
+  /* height: 169px; */
+  max-width: 202px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.06);
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.doctor-card img {
+  width: 78px;
+  height: 78px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.doctor-card h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  margin: 15px 0 5px 0;
+}
+
+.doctor-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000000;
+  margin: 5px 0;
+}
+
+ .doctor-item {
+  cursor: pointer;
+
+}
+
+
+
+.doctor-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+ /* .doctor-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  justify-content: center;
+  margin: 20px;
+  padding-top: 0px;
+} */
+
+.doctor-details-appoint {
+  padding-right: 10px;
+}
+
+ .doctor-details-appoint h3 {
+  margin-top: 0;
+  padding-left: 17px;
+  color: blueviolet
+}
+
+.doctor-details-appoint p {
+  margin: 5px 0;
+}
+ /* .left-section {
+  flex: 1;
+  padding: 20px;
+} */
+
+ .appointment-details {
+  max-width: 300px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+ .appointment-details h2 {
+  margin-bottom: 20px;
+}
+
+ .appointment-details label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.appointment-details input,
+.appointment-details select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.appointment-details button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.appointment-details button:hover {
+  background-color: darkblue;
+}
+
+#d {
+  padding-right: 10px;
+  padding-left: 5px;
+  text-align: center;
+}
+#e{
+  color: green;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: large;
+}
+.clinic-name {
+  color: rgba(0, 0, 0, 0.778);
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 3px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  /* text-decoration: underline; */
+}
+
+
+#c {
+  /* text-align: center; */
+  /* color: blue; */
+  font-weight: 700;
+  font-size: large;
+  padding-bottom: 0px;
+  /* text-decoration: underline; */
+  margin-top: 10px;
+}
+h4{
+   color:blue;
+
+   margin-left: 100px;
+   margin-top: 20px;
+   margin-bottom: 0px;
+   font-weight: 800;
+   font-size: 30px;
+   text-decoration: underline;
+  
+}
+/* #b{
+  color: blue;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  text-align: center;
+} */
+/* #button{
+  background-color: green;
+  color: white;
+  width: 150px;
+} */
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+}
+.patient-details form {
+  background-color:  whitesmoke;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 80px;
+  width: 520px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.patient-details .form-group {
+  margin-bottom: 15px;
+}
+
+.patient-details .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+p {
+  padding: 10px;
+  color: #3a463a;
+  font-size: medium;
+}
+.patient-details .form-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.patient-details button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.patient-details button:hover {
+  background-color: #45a049;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.images img {
+  width: 30%;
+  border-radius: 10px;
+}
+/* .map-container{
+    margin-top: 20px;
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 10px;
+} */
+/* #bn{
+  margin-top: 200px;
+  margin-bottom: 0px;
+  color: blue;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 50px;
+} */
+.book-appointment-link {
+  background-color: #00A48F;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.book-appointment-link:hover {
+  background-color: darkgreen;
+}
+
+/* Adjustments for button alignment */
+.doctor-details-appoint p {
+  margin-bottom: 5px; /* Increase margin between paragraphs */
+  
+}
+p.speciality {
+  color: #00A48F;
+  font-size: medium;
+  font-weight: bold;
+}
+p.location {
+  color: #000000;
+  font-size: small;
+  /* font-weight:bold; */
+}
+p.fees {
+  
+  font-size: medium;
+  font-weight:550;
+  color: #0043ff
+}
+
+.doctor-details-appoint h3 {
+  margin-bottom: 5px; /* Increase margin between paragraphs */
+  font-weight: 700;
+  font-size: large;
+  padding-bottom: 0px;
+  color: #3E64FF;
+  margin-top: 10px;
+}
+p span{
+  font-weight: 550;
+  font-size:medium;
+  padding-bottom: 0px;
+  color: #000000c6;
+}
+.doctor-details-appoint p:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+/* Other existing styles */
+
+#button {
+  background-color: green; /* Set the button background color to green */
+  color: white; /* Set the text color to white for contrast */
+  border: none; /* Remove default border */
+  padding: 7px 10px; /* Add some padding for better appearance */
+  border-radius: 7px; /* Optional: add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 16px; /* Set font size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#button:hover {
+  background-color: darkgreen; /* Darken the green color on hover */
+}

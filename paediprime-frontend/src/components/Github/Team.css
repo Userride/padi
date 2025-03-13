@@ -1,0 +1,101 @@
+/* src/Team.css */
+
+/* Reset default styles and set base font */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Center align the entire app content */
+.App {
+  text-align: center;
+}
+
+/* Center align the team section */
+.team {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling for the "Meet Our Team" heading */
+.team-heading {
+  font-size: 3rem; /* Larger font size */
+  font-weight: bold; /* Bold font weight */
+  color: #ff6600; /* Orange color */
+  margin-bottom: 30px; /* Spacing below the heading */
+  padding: 20px; /* Padding around the heading */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: inline-block; /* Ensure inline block to contain padding */
+}
+
+/* Flex container for team members, wrapping and centering */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Gap between team members */
+}
+
+/* Individual team member card */
+.team-member {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Fixed width for each team member card */
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for team member cards */
+.team-member:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+/* Team member image styling */
+.team-member-image {
+  border-radius: 50%; /* Rounded image */
+  width: 100px;
+  height: 100px;
+  object-fit: fill; /* Maintain aspect ratio */
+  margin: 0 auto 10px; /* Center align and space below */
+}
+
+/* Team member name styling */
+.team-member-name {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #333; /* Dark text color */
+}
+
+/* Team member role styling */
+.team-member-role {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Flex container for social media links */
+.team-member-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Gap between social media icons */
+}
+
+/* Styling for social media links */
+.team-member-link {
+  color: #000;
+  transition: color 0.3s;
+}
+
+/* Hover effect for social media links */
+.team-member-link:hover {
+  color: #0073b1; /* LinkedIn blue */
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: xxx-large;
+}

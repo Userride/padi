@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #4a5568; /* text-gray-600 equivalent */
+    /* margin-bottom:30px ; */
+  }
+.container1{
+  margin-top: 20px;
+}
+  .vision-banner {
+    border-radius: 200px;
+    background: linear-gradient(to right, white, #2BAFCC);
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    /* padding: 20px; */
+  }
+  
+  .banner-image img {
+    border-radius: 150px;
+    max-width: 100%;
+    height: 215px;
+  }
+  
+  .vision-text{
+    color: #004c8c; /* Dark blue color for the text */
+    font-size: 2em;
+    margin-left: auto;
+    padding-right:40px ;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: right;
+  }
+
+    .About-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+    .mission-banner {
+      border-radius: 200px;
+      background: linear-gradient(to left, white, #00CCB2);
+      display: flex;
+      align-items: center;
+      margin: 30px;
+      /* padding: 20px; */
+    }
+    
+    .mission-image img {
+      border-radius: 150px;
+      max-width: 100%;
+      height: 215px;
+    }
+    
+    .mission-text{
+      color: #004c8c; /* Dark blue color for the text */
+      font-size: 2em;
+      margin-right: auto;
+      padding-left:40px ;
+      font-family: "Inria Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+      text-align: left;
+
+    }
+    .mission-text p{
+      padding: 0px;
+      color: white;
+    }
+    .vision-text p{
+      padding: 0px;
+      color: white;
+    }
+  .container img,video{
+    border-radius: 10px;
+  }
+  .title{
+    text-align: left;
+  }
+
+.text-about-choose{
+  font-family: "Inria Serif", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.heading{
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.thank-you{
+  font-family: "Inria Serif", serif;
+  font-weight: 600;
+  font-size: large;
+  font-style: italic;
+  color: #004c8c;
+}
+@media (max-width: 768px) {
+  .vision-banner {
+      flex-direction: column;
+      background: linear-gradient(to bottom, white, #2BAFCC);
+  }
+  .mission-banner{
+    flex-direction: column-reverse;
+    background: linear-gradient(to bottom, white, #00CCB2);
+    margin: 30px;
+    padding: 20px;
+  }
+  .vision-text, .mission-text {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .vision-text, .mission-text {
+      font-size: 1.5em;
+  }
+  
+  .vision-banner .banner-image img, .mission-banner .mission-image img {
+      height: auto;
+  }
+
+  .space-y-6 {
+      flex-direction: column;
+  }
+
+  .container, .container1 {
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+
+  .About-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+
+  .whychoose .hd {
+      text-align: center;
+  }
+
+  .text-about-choose p {
+      text-align: center;
+  }
+}

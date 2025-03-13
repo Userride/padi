@@ -1,0 +1,391 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.984);
+    margin: 0;
+    
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    font-style: normal;
+    /* background-color: #eae9f3eb; */
+}
+.upper-container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.header {
+    color: #3E64FF;
+    /* font-size: 24px; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h9 {
+    text-align: center;
+    /* margin: 0 auto 80px; */
+ 
+    display: flex;
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: #fff; */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, .1); */
+}
+.prescription,.clinic{
+    flex: 1;
+    padding: 20px;
+}
+
+.toggle-switch label {
+    color: #3E64FF;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.toggle-switch input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    width: 40px;
+    background-color: #ddd;
+    border-radius: 15px;
+    position: relative;
+    transition: .3s all ease-in-out;
+}
+
+.toggle-switch input[type="checkbox"]:checked {
+    background-color: #008080;
+}
+
+.toggle-switch input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    /* top: -2px; */
+    left: -2px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(173, 203, 148);
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}
+
+.toggle-switch input[type="checkbox"]:checked:before {
+    left: 15px;
+}
+
+.prescription-count {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    /* position: absolute; */
+    /* left: 13.2%; */
+    padding-left: 11px;
+    /* display: contents; */
+    display: flex;
+    text-align: center;
+    font-family: "Prompt", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    
+}
+
+.prescription-count span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #008080;
+}
+.form-container {
+    /* border: 1px solid #dcdcdc; */
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 700px;
+    /* margin: auto; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.form-container legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-group2 {
+    display: flex;
+    margin-bottom: 15px;
+}
+.form-group2 label {
+    width: 180px;
+    padding-top: 5px;
+    text-align: left;
+}
+.form-group2 input[type="text"],
+.form-group2 input[type="number"],
+.form-group2 input[type="tel"],
+.form-group2 input[type="email"],
+.form-group2 input[type="date"] {
+    /* width: calc(100% - 190px); */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group2 .age-inputs {
+    display: flex;
+    gap: 5px;
+}
+.form-group2 .age-inputs input {
+    width: calc(50% - 10px);
+}
+.form-group2 .radio-group {
+    display: flex;
+    gap: 10px;
+}
+.column {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+
+
+.form-container {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    /* background-color: #fff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.left-side-prescription h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #0b236e;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.form-row {
+    display:inline;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form-group2 {
+    /* flex: 1; */
+    display: flex;
+    /* flex-direction: column; */
+    margin-right: 7px;
+    margin-bottom: 9px;
+}
+
+.form-group2:last-child {
+    margin-right: 0;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="text"]:focus,input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+.left-side-prescription{
+    margin: 15px;
+}
+.section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 48%;
+    margin: 10px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  /* label {
+    display: block;
+    margin-bottom: 5px;
+  } */
+  input[type="text"],input[type="number"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .signature-field {
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .last-div{
+    display: flex;
+    margin-top: 25px;
+  }
+  .add-medicine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #0955e5fc;
+    margin: 20px 0;
+}
+
+.add-medicine i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.add-medicine span {
+    font-size: 16px;
+    font-weight: bold;
+}
+/* app2.css */
+.save-prescription-button {
+    background-color: red;
+    color: white; /* Optional: Makes the text color white for better readability */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .save-prescription-button:hover {
+    background-color: darkred; /* Optional: Adds a darker shade on hover */
+  }
+
+    
+.prescription-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    /* flex: 1; */
+    display: flex;
+    /* flex-direction: column; */
+    margin-right: 7px;
+    margin-bottom: 9px;
+}
+
+
+.add-medicine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #0955e5fc;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .container, .upper-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container, .upper-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group2 {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-switch {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-switch label {
+        margin-bottom: 10px;
+    }
+
+    .prescription-count {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .prescription, .clinic {
+        padding: 10px;
+    }
+
+    .left-side-prescription h2 {
+        text-align: center;
+    }
+
+    .last-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container, .upper-container {
+        width: 70%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .add-medicine {
+        font-size: 14px;
+    }
+
+    .form-container {
+        padding: 5px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+    .left-side-prescription{
+        width: 400px;
+    }
+    
+}

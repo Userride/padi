@@ -1,0 +1,29 @@
+.alert-slider {
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    height: 30px; /* Thin slider */
+    overflow: hidden; /* Ensure text stays within bounds */
+    position: relative; /* Allows stacking */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    z-index: 10; /* Keeps it above other content */
+  }
+  
+  .alert-slider .scrolling-text {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text wrapping */
+    animation: scroll-left 30s linear infinite; /* Smooth, slow sliding animation */
+    font-size: 14px; /* Slightly smaller font for subtle alert */
+    font-weight: bold; /* Bold for better visibility */
+    color: #721c24; /* Dark red text color */
+    position: absolute; /* Keeps text positioned over background */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move off-screen to the left */
+    }
+  }
+  

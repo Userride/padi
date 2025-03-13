@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+.appointment-container {
+  font-family: "Inria Serif", serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f8f9fa;
+}
+.track span {
+  font-family: "Inria Serif", serif;
+  color:white;
+}
+.track p {
+  font-family: "Inria Serif", serif;
+  color:white;
+}
+.track h2{
+  font-family: "Inria Serif", serif;
+  font-size: xx-large;
+  color:white;
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.track-appointment-button {
+  background-color: #269a95;
+  border: none;
+  padding: 10px 20px;
+  color: #f5f8fa;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.trackclinic{
+  background-color:#0061ffc4 ;
+}
+.appointment-card {
+  /* background-color: #0061ffc4; */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-pic img {
+  width: 130px;
+  height: 130px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.clinic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clinic-details {
+  margin-top: 10px;
+}
+.doctorname{
+  font-family: "Inria Serif", serif;
+  font-size: x-large;
+  color: white;
+}
+.view-profile-button {
+  background-color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  color: #2a79ff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.check-time-button {
+  display: block;
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.timing-info {
+  margin-top: 20px;
+}
+
+.timing-item {
+  background-color: #f1fff6;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #4ea1a4;
+  border-radius: 14px;
+}
+.timing-details p{
+  font-size: medium;
+  font-weight: 600;
+  font-family: "Inria Serif", serif;
+  
+}
+.icon-home,
+.icon-doctor,
+.icon-patient,
+.icon-your-time {
+  width: 72px;
+  height: auto;
+  /* background-color: #77d9d5; */
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.timing-details {
+  display: flex;
+  flex-direction: column;
+}
+.timing{
+  color: black;
+  display: flex;
+    align-items: center;
+}
+.delayed-time {
+  display: flex;
+  align-items: center;
+}
+.timing-details img{
+  width: 35px;
+  padding-right: 15px;
+}
+.new-time {
+  color: red;
+  margin-left: 10px;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.middlefont{
+  font-size: large;
+  font-weight: 600;
+  font-family: "Inria Serif", serif;
+  color: black;
+}

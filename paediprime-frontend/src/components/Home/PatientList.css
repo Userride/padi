@@ -1,0 +1,77 @@
+.patient-list-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f9fc;
+  }
+  
+  .patient-list-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-form label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .search-form input {
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-form button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .patient-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .patient-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .patient-list li:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .serial-number {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .name {
+    color: #333;
+  }
+  
+  .text-red-500 {
+    color: #f56565;
+    text-align: center;
+  }
+  

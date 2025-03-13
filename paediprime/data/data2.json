@@ -1,0 +1,61 @@
+[
+        {
+         
+          "name": "Dr. Arita Khan",
+          "specialty": "MBBS, MD (Pediatrics)",
+          "image":  "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "consultationFees": 500,
+          "location": "Kolkata",
+          "clinicTime": "9:00 AM - 5:00 PM",
+          
+          "about": "Dr. Arita Khan is a highly experienced Pediatrician dedicated to providing personalized care to her patients."
+          
+        },
+        {
+          
+          "name": "Dr. Dipesh Barman",
+          "specialty": "MBBS, MD (Pediatrics)",
+          "image":  "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "consultationFees": 500,
+          "location": "Kolkata",
+          "clinicTime": "9:00 AM - 5:00 PM",
+         
+          "about": "Dr. Dipesh Barman is a caring and dedicated pediatrician committed to providing comprehensive healthcare services to children."
+        },
+     
+        {
+         
+          "name": "Dr. Emily Brown",
+          "specialty": "Oncologist",
+          "image":  "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "consultationFees": 300,
+          "location": "Kolkata",
+          "clinicTime": "8:30 AM - 4:30 PM",
+          
+          "about": "Dr. Emily Brown is a dedicated oncologist specializing in the diagnosis and treatment of cancer."
+        },
+     
+        {
+          
+          "name": "Dr. Sarah Johnson",
+          "specialty": "Cardiologist",
+          "image":  "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "consultationFees": 350,
+          "location": "Durgapur",
+          "clinicTime": "9:00 AM - 5:00 PM",
+         
+          "about": "Dr. Sarah Johnson is a highly skilled cardiologist dedicated to providing comprehensive heart care."
+        },
+        {
+          
+          "name": "Dr. James Smith",
+          "specialty": "Neurologist",
+          "image":  "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "consultationFees": 400,
+          "location": "Kolkata",
+          "clinicTime": "9:00 AM - 5:00 PM",
+         
+          "about": "Dr. James Smith is an experienced neurologist specializing in the diagnosis and treatment of neurological disorders."
+        }
+      ]
+ 
