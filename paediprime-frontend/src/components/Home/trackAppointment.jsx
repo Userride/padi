@@ -17,6 +17,7 @@ const TrackAppointment = () => {
   const [clinicOpeningTime, setClinicOpeningTime] = useState(null);
   const [doctorArrivalTime, setDoctorArrivalTime] = useState(null);
   const [predictedExitTime, setPredictedExitTime] = useState(null);
+  const [latestPrescriptionData, setLatestPrescriptionData] = useState(null);
 
   const [appointmentData, setAppointmentData] = useState(null);
 
@@ -113,47 +114,81 @@ const TrackAppointment = () => {
     }
     return null;
   };
-
   // When "Check Your Time" is clicked, compute all times dynamically
-  const handleCheckTimeClick = () => {
-    if (!appointmentData || !appointmentData.slot || !appointmentData.dateofappointment || !appointmentData.serialNumber) {
+  const handleCheckTimeClick = async () => {
+    if (!appointmentData || !appointmentData.doctorname || !appointmentData.dateofappointment || !appointmentData.serialNumber) {
       console.error("Incomplete appointment data");
       return;
     }
-    
-    // Assume the slot is provided as a string, e.g. "9Am-11Am"
-    const { slot, dateofappointment, serialNumber } = appointmentData;
-    const [slotStart, slotEnd] = slot.split('-');
-    
-    const timeParts = parseTimeString(slotStart);
-    if (!timeParts) {
-      console.error("Invalid slot start time format");
-      return;
+  
+    try {
+      // Step 1: Fetch the doctor's latest check-in time
+      const checkInResponse = await fetch(`http://localhost:5000/api/doctor-times/latest-check-in`);
+      if (!checkInResponse.ok) {
+        console.error("Failed to fetch doctor check-in time, status:", checkInResponse.status);
+        return;
+      }
+      const { checkInTime } = await checkInResponse.json();
+      const doctorCheckInTime = new Date(checkInTime);
+  
+      // Set doctor arrival time from check-in
+      setDoctorArrivalTime(doctorCheckInTime);
+  
+      // Step 2: Fetch the latest prescription saved time (last patient exit time)
+      const latestPrescriptionResponse = await fetch(`http://localhost:5000/api/patients/latest`);
+      if (!latestPrescriptionResponse.ok) {
+        console.error("Failed to fetch latest prescription time, status:", latestPrescriptionResponse.status);
+        return;
+      }
+  
+      let LatestPrescriptionData = await latestPrescriptionResponse.json();
+      setLatestPrescriptionData(LatestPrescriptionData);
+      console.log("LATESTTTTT", latestPrescriptionData.serialNumber)
+      let lastExitTime = new Date(latestPrescriptionData.updatedAt); // Use latest prescription saved time
+  
+      // Step 3: Fetch time predictions for the selected doctor and appointment date
+      const response = await fetch(
+        `http://localhost:5000/api/time-predictions?doctorname=${encodeURIComponent(
+          appointmentData.doctorname
+        )}&dateofappointment=${encodeURIComponent(appointmentData.dateofappointment)}`
+      );
+  
+      if (!response.ok) {
+        console.error("Failed to fetch time predictions, status:", response.status);
+        return;
+      }
+  
+      const { data: predictions } = await response.json();
+  
+      // Step 4: Sort predictions based on serial number
+      predictions.sort((a, b) => a.serialNumber - b.serialNumber);
+  
+      // Step 5: Get patients before the logged-in user
+      const relevantPredictions = predictions.filter((p) => p.serialNumber < appointmentData.serialNumber);
+  
+      // Step 6: Sum up estimated consultation durations for remaining patients
+      const additionalWaitingTimeMs = relevantPredictions.reduce((sum, p) => {
+        const match = p.estimatedConsultationDuration.match(/(\d+) minutes (\d+\.\d+) seconds/);
+        if (match) {
+          const minutes = parseInt(match[1], 10);
+          const seconds = parseFloat(match[2]);
+          return sum + minutes * 60000 + seconds * 1000;
+        }
+        return sum;
+      }, 0);
+  
+      // Predicted exit time = latest prescription time + waiting time
+      const computedPredictedExitTime = new Date(lastExitTime.getTime() + additionalWaitingTimeMs);
+  
+      setPredictedExitTime(computedPredictedExitTime);
+      setShowTimings(true);
+    } catch (error) {
+      console.error("Error fetching time predictions:", error);
     }
-    
-    // Create a Date object for the appointment date using the date from appointmentData.
-    // This ensures the timing uses the appointment's day.
-    const appointmentDate = new Date(dateofappointment);
-    // Set clinic opening time to the slot's starting time on the appointment day.
-    const computedClinicOpeningTime = new Date(appointmentDate);
-    computedClinicOpeningTime.setHours(timeParts.hour, timeParts.minutes, 0, 0);
-    
-    // Doctor arrival time is 5 minutes after the clinic opening time.
-    const computedDoctorArrivalTime = new Date(computedClinicOpeningTime.getTime() + 5 * 60000);
-    
-    // Compute predicted exit time.
-    // Here, we assume an average time (e.g., 15 minutes) per patient before the logged in patient.
-    // For the first patient (serialNumber = 1) there is no waiting time.
-    const averageTimePerPatient = 15; // in minutes
-    const waitingTimeMillis = (serialNumber - 1) * averageTimePerPatient * 60000;
-    const computedPredictedExitTime = new Date(computedClinicOpeningTime.getTime() + waitingTimeMillis);
-    
-    // Update our states with the computed values.
-    setClinicOpeningTime(computedClinicOpeningTime);
-    setDoctorArrivalTime(computedDoctorArrivalTime);
-    setPredictedExitTime(computedPredictedExitTime);
-    setShowTimings(true);
   };
+  
+  
+  
 
   const formatTime = (time) => {
     if (!time) return 'Fetching...';
@@ -248,7 +283,7 @@ const TrackAppointment = () => {
               <img src={patiententer2} alt="Patient Exit" />
             </i>
             <p className="middlefont">
-              Patient Number {appointmentData.serialNumber} Exit
+              Patient Number {latestPrescriptionData.serialNumber} Exit
             </p>
             <div className="timing-details">
               <p className="nth-patient-time">

@@ -150,6 +150,48 @@ router.post('/time-prediction', async (req, res) => {
   }
 });
 
+
+
+
+
+
+router.get('/time-predictions', async (req, res) => {
+  try {
+    const { doctorname, dateofappointment } = req.query;
+
+    if (!doctorname || !dateofappointment) {
+      return res.status(400).json({ error: 'Missing required query parameters: doctorname and dateofappointment' });
+    }
+
+    const predictions = await TimePrediction.find({
+      doctorname,
+      dateofappointment
+    }).sort({ serialNumber: 1 }).lean();
+
+    if (!predictions.length) {
+      console.warn("⚠️ No time predictions found for the given doctor and date");
+      return res.status(404).json({ error: 'No time predictions found' });
+    }
+
+    console.log("✅ Time predictions retrieved successfully:", predictions);
+    res.json({ success: true, data: predictions });
+  } catch (error) {
+    console.error("🚨 Error fetching time predictions:", error);
+    res.status(500).json({ error: 'Internal server error', details: error.message });
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 router.get('/patients', async (req, res) => {
   try {
     const patients = await Patient.find();
