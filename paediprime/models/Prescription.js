@@ -52,6 +52,14 @@ const PrescriptionSchema = new Schema({
         type: String,
         required: false // Optional field
     },
+    appointment_id: {         
+        type: String,
+        required: false
+    },
+    slot_no: {              
+        type: String,
+        required: false
+    },
     phone_number: {
         type: String,
         required: true
