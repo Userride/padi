@@ -68,6 +68,8 @@ function DoctorInterface() {
     present_visit: '',
     last_visit: '',
     visit_number: '',
+    appointment_id: '',    
+    slot_no: '',        
     phone_number: '',
     email_address: '',
     medical_history: '',
@@ -333,7 +335,7 @@ function DoctorInterface() {
       };
 
       const response = await axios.post(
-        'https://paediprime-4chb.onrender.com/api/prescription',
+        'http://localhost:5000/api/prescription',
         payload
       );
       alert('Prescription saved successfully!');
@@ -475,6 +477,12 @@ function DoctorInterface() {
                   <div className="form-group2">
                     <label htmlFor="appointment_id">Appointment ID :</label>
                     <input type="text" id="appointment_id" name="appointment_id" onChange={handleInputChange} />
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="form-group2">
+                    <label htmlFor="slot_no">Slot No:</label>
+                    <input type="text" id="slot_no" name="slot_no" onChange={handleInputChange} />
                   </div>
                 </div>
               </div>
