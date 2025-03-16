@@ -52,11 +52,11 @@ const PrescriptionSchema = new Schema({
         type: String,
         required: false // Optional field
     },
-    appointment_id: {         
+    appointment_id: {          // New field added for appointment ID
         type: String,
         required: false
     },
-    slot_no: {              
+    serial_no: {              // New extra field added below appointment id
         type: String,
         required: false
     },
