@@ -262,7 +262,7 @@ const TrackAppointment = () => {
             <div className="timing-details">
               <p className="timing">
                 <img src={clock} alt="clock" />{' '}
-                {clinicOpeningTime ? formatTime(clinicOpeningTime) : 'Fetching...'}
+                {clinicOpeningTime ? formatTime(clinicOpeningTime) : '8:00 AM'}
               </p>
             </div>
           </div>
