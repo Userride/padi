@@ -69,7 +69,7 @@ function DoctorInterface() {
     last_visit: '',
     visit_number: '',
     appointment_id: '',    
-    slot_no: '',        
+    serial_no: '',        
     phone_number: '',
     email_address: '',
     medical_history: '',
@@ -481,8 +481,8 @@ function DoctorInterface() {
                 </div>
                 <div className="form-row">
                   <div className="form-group2">
-                    <label htmlFor="slot_no">Slot No:</label>
-                    <input type="text" id="slot_no" name="slot_no" onChange={handleInputChange} />
+                    <label htmlFor="serial_no">Serial No:</label>
+                    <input type="text" id="serial_no" name="serial_no" onChange={handleInputChange} />
                   </div>
                 </div>
               </div>
