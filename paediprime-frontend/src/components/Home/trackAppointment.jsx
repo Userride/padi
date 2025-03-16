@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './trackAppointment.css'; 
+import './trackAppointment.css';
 import doctorarrive from "./images/doctor-arrive.jpg";
 import clock from "./images/clock.jpg";
 import patiententer1 from "./images/patient-entering.jpg";
@@ -120,7 +120,7 @@ const TrackAppointment = () => {
       console.error("Incomplete appointment data");
       return;
     }
-  
+
     try {
       // Step 1: Fetch the doctor's latest check-in time
       const checkInResponse = await fetch(`http://localhost:5000/api/doctor-times/latest-check-in`);
@@ -130,42 +130,42 @@ const TrackAppointment = () => {
       }
       const { checkInTime } = await checkInResponse.json();
       const doctorCheckInTime = new Date(checkInTime);
-  
+
       // Set doctor arrival time from check-in
       setDoctorArrivalTime(doctorCheckInTime);
-  
+
       // Step 2: Fetch the latest prescription saved time (last patient exit time)
-      const latestPrescriptionResponse = await fetch(`http://localhost:5000/api/patients/latest`);
+      const latestPrescriptionResponse = await fetch(`http://localhost:5000/api/prescription/latest`);
       if (!latestPrescriptionResponse.ok) {
         console.error("Failed to fetch latest prescription time, status:", latestPrescriptionResponse.status);
         return;
       }
-  
+
       let LatestPrescriptionData = await latestPrescriptionResponse.json();
       setLatestPrescriptionData(LatestPrescriptionData);
       console.log("LATESTTTTT", latestPrescriptionData.serialNumber)
       let lastExitTime = new Date(latestPrescriptionData.updatedAt); // Use latest prescription saved time
-  
+
       // Step 3: Fetch time predictions for the selected doctor and appointment date
       const response = await fetch(
         `http://localhost:5000/api/time-predictions?doctorname=${encodeURIComponent(
           appointmentData.doctorname
         )}&dateofappointment=${encodeURIComponent(appointmentData.dateofappointment)}`
       );
-  
+
       if (!response.ok) {
         console.error("Failed to fetch time predictions, status:", response.status);
         return;
       }
-  
+
       const { data: predictions } = await response.json();
-  
+
       // Step 4: Sort predictions based on serial number
       predictions.sort((a, b) => a.serialNumber - b.serialNumber);
-  
+
       // Step 5: Get patients before the logged-in user
       const relevantPredictions = predictions.filter((p) => p.serialNumber < appointmentData.serialNumber);
-  
+
       // Step 6: Sum up estimated consultation durations for remaining patients
       const additionalWaitingTimeMs = relevantPredictions.reduce((sum, p) => {
         const match = p.estimatedConsultationDuration.match(/(\d+) minutes (\d+\.\d+) seconds/);
@@ -176,19 +176,19 @@ const TrackAppointment = () => {
         }
         return sum;
       }, 0);
-  
+
       // Predicted exit time = latest prescription time + waiting time
       const computedPredictedExitTime = new Date(lastExitTime.getTime() + additionalWaitingTimeMs);
-  
+
       setPredictedExitTime(computedPredictedExitTime);
       setShowTimings(true);
     } catch (error) {
       console.error("Error fetching time predictions:", error);
     }
   };
-  
-  
-  
+
+
+
 
   const formatTime = (time) => {
     if (!time) return 'Fetching...';
@@ -283,12 +283,14 @@ const TrackAppointment = () => {
               <img src={patiententer2} alt="Patient Exit" />
             </i>
             <p className="middlefont">
-              Patient Number {latestPrescriptionData.serialNumber} Exit
+              Patient Number {latestPrescriptionData?.serial_no} Exit
             </p>
             <div className="timing-details">
               <p className="nth-patient-time">
                 <img src={clock} alt="clock" />{' '}
-                {predictedExitTime ? formatTime(predictedExitTime) : 'Fetching...'}
+                {latestPrescriptionData?.createdAt
+                  ? formatTime(new Date(latestPrescriptionData.createdAt))
+                  : 'Fetching...'}
               </p>
             </div>
           </div>
