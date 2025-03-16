@@ -213,6 +213,7 @@ function DoctorAppointment() {
       return '7pm-9pm';
     }
   };
+
   const handleSubmitAppointment = async (e) => {
     e.preventDefault();
   
@@ -243,7 +244,13 @@ function DoctorAppointment() {
   
       alert(`Appointment booked successfully! Appointment number: ${response.data.appointmentNumber}`);
   
-      const createdPatient = response.data; // ✅ Get created patient data with serialNumber
+      const createdPatient = response.data; // Get created patient data with serialNumber
+  
+      // Update the patientLists state so the new appointment appears in Booking Information
+      setPatientLists(prevLists => ({
+        ...prevLists,
+        [createdPatient.slot]: [...(prevLists[createdPatient.slot] || []), createdPatient]
+      }));
   
       // 🔹 Construct payload for time prediction using local values and doctor info
       const timePredictionPayload = {
@@ -259,7 +266,6 @@ function DoctorAppointment() {
   
       console.log(" Time Prediction Payload being sent:", timePredictionPayload);
       
-  
       // 🔹 Post the time prediction payload
       try {
         const timePredictionResponse = await axios.post(
@@ -294,8 +300,6 @@ function DoctorAppointment() {
       setLoading(false);
     }
   };
-  
-  
 
   const handleSymptomSearch = (e) => {
     const value = e.target.value;
@@ -482,17 +486,21 @@ function DoctorAppointment() {
             <div key={slot} className="slot">
               <h3>{slot}</h3>
               <ul>
-                {patientLists[slot].map((patient, index) => (
-                  <li key={index}>
-                    <strong>{patient.patientName}</strong><br />
-                    Parent: {patient.parentName}<br />
-                    Age: {patient.age} years<br />
-                    Gender: {patient.gender}<br />
-                    Date of Appointment: {patient.dateofappointment}<br />
-                    Symptoms: {patient.symptoms ? patient.symptoms.join(', ') : 'N/A'}<br />
-                    Predicted Consultation Time: {patient.predictedConsultationTime} seconds<br />
-                  </li>
-                ))}
+                {patientLists[slot] && patientLists[slot].length > 0 ? (
+                  patientLists[slot].map((patient, index) => (
+                    <li key={index}>
+                      <strong>{patient.patientName}</strong><br />
+                      Parent: {patient.parentName}<br />
+                      Age: {patient.age} years<br />
+                      Gender: {patient.gender}<br />
+                      Date of Appointment: {patient.dateofappointment}<br />
+                      Symptoms: {patient.symptoms ? patient.symptoms.join(', ') : 'N/A'}<br />
+                      Predicted Consultation Time: {patient.predictedConsultationTime} seconds<br />
+                    </li>
+                  ))
+                ) : (
+                  <li>No bookings in this slot.</li>
+                )}
               </ul>
             </div>
           ))}
